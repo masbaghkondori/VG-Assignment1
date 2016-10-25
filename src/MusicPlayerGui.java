@@ -6,18 +6,24 @@ import java.awt.event.ActionListener;
 import java.io.File;
 
 import javax.swing.JButton;
+import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JTextField;
 
 import jaco.mp3.player.MP3Player;
 
 public class MusicPlayerGui {
-
+	File f = new File("");
+	
+	private JFileChooser fc=new JFileChooser();
+	private MP3Player player = new MP3Player(new File(""));
 	private JFrame frmMyMusicPlayer;
-
+	private JTextField textField;
+	
 	/**
 	 * Launch the application.
-	 */
+	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -29,7 +35,7 @@ public class MusicPlayerGui {
 				}
 			}
 		});
-	}
+	} */
 
 	/**
 	 * Create the application.
@@ -43,8 +49,10 @@ public class MusicPlayerGui {
 	 */
 	private void initialize() {
 /*		List list = new List();
-*/		MP3Player player = new MP3Player();
-		player.addToPlayList(new File("C:\\Users\\mohbes\\Downloads\\Developers.mp3"));
+//		MP3Player player = new MP3Player();*/
+//		player.addToPlayList(new File("C:\\Users\\mohbes\\Desktop\\playlist\\Rihanna - Only Girl (In The World).mp3"));
+//	    player.addToPlayList(new File("C:\\Users\\mohbes\\Desktop\\playlist\\Phil Collins - Another Day In Paradise.mp3"));
+//		player.addToPlayList(new File("C:\\Users\\mohbes\\Downloads\\Developers.mp3"));
 		frmMyMusicPlayer = new JFrame();
 		frmMyMusicPlayer.getContentPane().setBackground(new Color(34, 139, 34));
 		frmMyMusicPlayer.setFont(new Font("Angsana New", Font.BOLD, 14));
@@ -56,15 +64,17 @@ public class MusicPlayerGui {
 		JButton btnNewButton = new JButton("Open");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-			/*	int returnVal=fileChooser.showOptionDialog(btnOpen);
-				if (returnVal==JFileChooser.Approve_Option){
-					File f=fileChooser.getSelectedFile();}
-	    new MP3Player(f).play();
-				}
-			}*/
-
-				
-				
+				player.stop();
+				int returnVal=fc.showOpenDialog(btnNewButton);
+				if (returnVal==JFileChooser.APPROVE_OPTION){
+					File f=fc.getSelectedFile();
+					System.out.println(f.getAbsolutePath());
+					player = new MP3Player(f);
+					String name=f.getName();
+					textField.setText(name);
+					player.play();
+			}
+	
 			}
 		});
 		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 15));
@@ -112,5 +122,13 @@ public class MusicPlayerGui {
 		lblNewLabel.setBackground(new Color(192, 192, 192));
 		lblNewLabel.setBounds(32, 13, 66, 16);
 		frmMyMusicPlayer.getContentPane().add(lblNewLabel);
+		
+		textField = new JTextField();
+		textField.setBounds(96, 12, 325, 22);
+		frmMyMusicPlayer.getContentPane().add(textField);
+		textField.setColumns(10);
+		
+		
+		frmMyMusicPlayer.setVisible(true);
 	}
 }

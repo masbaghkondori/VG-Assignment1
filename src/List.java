@@ -6,11 +6,11 @@ import javax.swing.JFileChooser;
 import jaco.mp3.player.MP3Player;
 
 public class List{
-	private FileHandler fileHandler = new FileHandler();
+/**	private FileHandler fileHandler = new FileHandler();
 	private JFileChooser fileChooser=new JFileChooser();
 
-/*	private btnPlaylist myPlaylist = new btnPlaylist("Open");
-*/	MusicPlayerGui musicPlayerGui=new MusicPlayerGui();
+	private btnPlaylist myPlaylist = new btnPlaylist("Open");
+	MusicPlayerGui musicPlayerGui=new MusicPlayerGui();
 	
       MP3Player player = new MP3Player();
  
@@ -22,6 +22,6 @@ public class List{
 	    player.addToPlayList(new URL("http://server.com/mp3s/test4.mp3"));
 	    int returnVal = fc.showOpenDialog(fc);
 	    System.out.println(returnVal);
-		
+		*/
 }
 
