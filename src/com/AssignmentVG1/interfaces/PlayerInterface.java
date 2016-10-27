@@ -1,3 +1,4 @@
+package com.AssignmentVG1.interfaces;
 
 public interface PlayerInterface {
 	

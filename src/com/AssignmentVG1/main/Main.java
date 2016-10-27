@@ -1,6 +1,7 @@
+package com.AssignmentVG1.main;
 import java.awt.EventQueue;
 
-//import javax.swing.JFrame;
+import com.AssignmentVG1.GUI.ViewClass;
 
 public class Main {
 	/*private JFrame frmMyMusicPlayer;

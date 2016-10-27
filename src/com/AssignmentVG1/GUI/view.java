@@ -1,8 +1,9 @@
+package com.AssignmentVG1.GUI;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 
-public class trr {
+public class view {
 
 	private JFrame frame;
 
@@ -13,7 +14,7 @@ public class trr {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					trr window = new trr();
+					view window = new view();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -25,7 +26,7 @@ public class trr {
 	/**
 	 * Create the application.
 	 */
-	public trr() {
+	public view() {
 		initialize();
 	}
 
