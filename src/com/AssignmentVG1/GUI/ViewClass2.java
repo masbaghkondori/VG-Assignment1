@@ -54,6 +54,7 @@ public class ViewClass2 {
 					textField.setText(name);
 					pMethods.play();
 				}
+				
 			}
 		});
 		btnOpen.setFont(new Font("Tahoma", Font.BOLD, 15));
