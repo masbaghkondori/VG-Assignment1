@@ -113,6 +113,7 @@ public class ViewClass implements ActionListener{
 			frmMyMusicPlayer.getContentPane().add(lblNewLabel);
 			frmMyMusicPlayer.setVisible(true);
 		}
+		
 		/**
 		 * Method for adding the action listeners
 		 * 
@@ -145,11 +146,13 @@ public class ViewClass implements ActionListener{
 						File f = fc.getSelectedFile();
 						player = new MP3Player(f);
 						pMethods.stop();
+						btnStop.setBackground(Color.cyan);
+
 						pMethods.setPlayer(player);
 						String name = f.getName();
 						textField.setText(name);
 						pMethods.play();
-						btnPlay.setBackground(Color.GREEN);
+						btnPlay.setBackground(Color.cyan);
 					}
 			}	
 			/***
