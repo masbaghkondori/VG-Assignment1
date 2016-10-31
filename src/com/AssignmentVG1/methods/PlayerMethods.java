@@ -12,6 +12,7 @@ import jaco.mp3.player.MP3Player;
  * 
  *          class PlayerMethods is a class which implements methods in
  *          'PlayerInterface'.
+ *          
  * 
  */
 
@@ -20,7 +21,7 @@ public class PlayerMethods implements PlayerInterface {
 	private MP3Player player = new MP3Player(new File(""));
 
 	/***
-	 * setter and getter to assign value to player which is an attribute in type of MP3Player.
+	 * setter and getter to assign a value to player which is an attribute in type of MP3Player.
 	 * 
 	 * @param player
 	 */
@@ -42,22 +43,20 @@ public class PlayerMethods implements PlayerInterface {
 	}
 
 	/***
-	 * Play method plays a MP3 music which already selected.
+	 * 'Play method' plays a MP3 music which already selected.
 	 */
 	@Override
 	public void play() {
-		// TODO Auto-generated method stub
 		player.play();
 		return;
 	}
 
 	/***
 	 * 'Pause method' pauses the MP3 music which is playing, if we use button
-	 * 'play', the music continues from the 'pause point' of the music.
+	 * 'play', the music will continue from the 'pause point' of the music.
 	 */
 	@Override
 	public void pause() {
-		// TODO Auto-generated method stub
 		player.pause();
 		return;
 	}
@@ -68,7 +67,6 @@ public class PlayerMethods implements PlayerInterface {
 	 */
 	@Override
 	public void stop() {
-		// TODO Auto-generated method stub
 		player.stop();
 		return;
 	}

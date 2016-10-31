@@ -1,24 +1,15 @@
 package com.AssignmentVG1.main;
-import java.awt.EventQueue;
 
 import com.AssignmentVG1.GUI.ViewClass;
+/**
+ *  This program implements an application that 'opens' a list of Mp3 and can do 'play', 'pause' and 'stop'.
+ * @author Masoomeh Baghban
+ * * @since 10-30-2016
 
+ */
 public class Main {
-	/*private JFrame frmMyMusicPlayer;
-	private ViewClass vClass;*/
 
 	public static void main(String[] args) {
-		ViewClass window = new ViewClass();
-
-		// EventQueue.invokeLater(new Runnable() {
-		// public void run() {
-		// try {
-		// ViewClass window = new ViewClass();
-		// window.frmViewClass.setVisible(true);
-		// } catch (Exception e) {
-		// e.printStackTrace();
-		// }
-		// }
-		// });
+		new ViewClass();		
 	}
 }
