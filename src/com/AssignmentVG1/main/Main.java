@@ -10,6 +10,10 @@ import com.AssignmentVG1.GUI.ViewClass;
 public class Main {
 
 	public static void main(String[] args) {
+<<<<<<< HEAD
 		new ViewClass();		
+=======
+		new ViewClass();
+>>>>>>> c564f3e028c309705a02ddf0b5feaa8b0b2d2a48
 	}
 }

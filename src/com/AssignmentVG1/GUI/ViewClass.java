@@ -12,7 +12,10 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import com.AssignmentVG1.methods.PlayerMethods;
 import jaco.mp3.player.MP3Player;
+<<<<<<< HEAD
 
+=======
+>>>>>>> c564f3e028c309705a02ddf0b5feaa8b0b2d2a48
 /**
  * 
  * Class ViewClass for creating the GUI
@@ -77,13 +80,21 @@ public class ViewClass implements ActionListener {
 		/***
 		 * This part creates a label
 		 */
+<<<<<<< HEAD
 		lblMusic.setForeground(new Color(255, 255, 0));
+=======
+		lblMusic.setForeground(new Color(0, 0, 0));
+>>>>>>> c564f3e028c309705a02ddf0b5feaa8b0b2d2a48
 		// JLabel lblNewLabel = new JLabel("Music:");
 		lblMusic.setFont(new Font("Tahoma", Font.BOLD, 18));
 		lblMusic.setBackground(new Color(192, 192, 192));
 		lblMusic.setBounds(32, 13, 66, 16);
 		/***
+<<<<<<< HEAD
 		 * This part creates a Label to show the music name
+=======
+		 * This part creates a TextField to show the music name
+>>>>>>> c564f3e028c309705a02ddf0b5feaa8b0b2d2a48
 		 */
 		lblMusicName.setForeground(Color.YELLOW);
 		lblMusicName.setFont(
@@ -103,12 +114,22 @@ public class ViewClass implements ActionListener {
 		frmMyMusicPlayer.getContentPane().add(btnPause);
 		frmMyMusicPlayer.getContentPane().add(btnStop);
 		frmMyMusicPlayer.getContentPane().add(lblMusic);
+<<<<<<< HEAD
 		frmMyMusicPlayer.getContentPane().add(lblMusicName);
+=======
+
+		frmMyMusicPlayer.getContentPane().add(lblMusicName);
+
+>>>>>>> c564f3e028c309705a02ddf0b5feaa8b0b2d2a48
 		frmMyMusicPlayer.setVisible(true);
 	}
 
 	/**
+<<<<<<< HEAD
 	 * Method for adding the action listeners to activate listener to get any action of the buttons.
+=======
+	 * Method for adding the action listeners
+>>>>>>> c564f3e028c309705a02ddf0b5feaa8b0b2d2a48
 	 * 
 	 * @param none
 	 * @return none
@@ -125,20 +146,34 @@ public class ViewClass implements ActionListener {
 	 * Mp3Player
 	 * 
 	 * @param e
+<<<<<<< HEAD
 	 *
+=======
+	 * @param lblMusicName
+>>>>>>> c564f3e028c309705a02ddf0b5feaa8b0b2d2a48
 	 * @return none
 	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
+<<<<<<< HEAD
         
 		btnOpen.setBackground(new Color(240, 240, 240));
 		btnPlay.setBackground(new Color(240, 240, 240));
 		btnPause.setBackground(new Color(240, 240, 240));
 		btnStop.setBackground(new Color(240, 240, 240));
+=======
+>>>>>>> c564f3e028c309705a02ddf0b5feaa8b0b2d2a48
 
 		/***
 		 * in case you click on open and click on a MP3 this part of program will run.
 		 */
+<<<<<<< HEAD
+=======
+		btnPlay.setBackground(new Color(240, 240, 240));
+		btnPause.setBackground(new Color(240, 240, 240));
+		btnStop.setBackground(new Color(240, 240, 240));
+
+>>>>>>> c564f3e028c309705a02ddf0b5feaa8b0b2d2a48
 		if (e.getSource() == btnOpen) {
 			int returnVal = fc.showOpenDialog(btnOpen);
 			if (returnVal == JFileChooser.APPROVE_OPTION) {
